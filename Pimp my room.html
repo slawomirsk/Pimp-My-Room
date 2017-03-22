@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pimp my room</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ cursor: "move", cursorAt: { top: 80, left: 80 } });
+    $( "#draggable2" ).draggable({ cursor: "move", cursorAt: { top: 80, left: 80 } });
+    $( "#draggable3" ).draggable({ cursor: "move", cursorAt: { top: 80, left: 80 } });
+    $( "#draggable4" ).draggable({ cursor: "move", cursorAt: { top: 80, left: 80 } });
+    $( "#draggable5" ).draggable({ cursor: "move", cursorAt: { top: 80, left: 80 } });
+  } );
+
+  </script>
+</head>
+	  
+<style>
+	
+  	#draggable, #draggable2, #draggable3, #draggable4, #draggable5 { 
+		float: left;
+		margin: 15px;
+	}
+	
+	#pokoj {
+		width: 1000px;
+		height: 500px;
+		margin: 0 auto;
+	}
+	
+	h1{
+		color: #e50ddd;
+	}
+	
+</style>
+
+<body>
+ 	
+	<center><img src="header.png" alt="header" /></center>
+	
+	<div id="pokoj">
+		<img src="room.png" alt="room" />
+	</div>
+	
+	<hr>
+	
+	<center><h1>Meble</h1></center>
+	
+	<div id="draggable" class="ui-widget-content">
+		<img src="desk.png" alt="desk" width="300px" height="200px" />
+	</div>
+	
+	<div id="draggable2" class="ui-widget-content">
+		<img src="bed.png" alt="bed" width="400px" height="200px" />
+	</div>
+	
+	<div id="draggable3" class="ui-widget-content">
+		<img src="bag.png" alt="bag" width="200px" height="200px" />
+	</div>
+	
+	<div id="draggable4" class="ui-widget-content">
+		<img src="sofa.png" alt="sofa" width="400px" height="150px" />
+	</div>
+	
+	<div id="draggable5" class="ui-widget-content">
+		<img src="corner.png" alt="sofa" width="400px" height="350px" />
+	</div>
+	
+</body>
+</html>
